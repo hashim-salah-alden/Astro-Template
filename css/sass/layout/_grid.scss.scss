@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+// create a simple grid system
+%grid{
+    float:$float-left;
+    padding:10px;
+}
+
+$grid-colums: 12;
+
+@for $i from 1 through $grid-colums {
+
+    .col-#{$i}{
+        width: (100% / 12) * $i;
+        @extend %grid;
+    }
+}
+
+
+.container{
+    position: relative;
+    width:1170px;
+    margin:0 auto;
+    padding-left:15px;
+    padding-right:15px
+}
+
+.clear-fix{
+    clear: both;
+}

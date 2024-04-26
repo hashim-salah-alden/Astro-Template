@@ -1,0 +1,507 @@
+/* No CSS */
+/* 
+        &:after{       
+            top: 540px;
+            right: -200px;
+        }
+*/
+@import url(c:\Users\MH\Desktop\Astro Template\css\sass\helpers\classes.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  padding: 10px;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.header {
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.header .top {
+  background-color: #344392;
+  padding: 10px 0;
+}
+
+.header .top .info-box {
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header .top .info-box span {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.header .navbar {
+  background-color: #f4f7f9;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.header .navbar .logo {
+  float: left;
+  width: 30%;
+}
+
+.header .navbar .links {
+  float: left;
+  width: 70%;
+}
+
+.header .navbar .links ul li {
+  display: inline-block;
+  margin: 0px 15px;
+  font-size: 16px;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header .navbar .links ul .link {
+  text-decoration: none;
+  color: #334752;
+}
+
+.header .landing {
+  background-color: #344392;
+  position: relative;
+}
+
+.header .landing .container img {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.header:after {
+  content: url("../images/Clouds.png");
+  position: absolute;
+  top: 650px;
+  right: 0;
+}
+
+.pricing-section .pricing-box .pricing-info button, .search-domin form button, .contact-us button {
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #53c1ef;
+  border-color: #53c1ef;
+  font-size: 16px;
+}
+
+/* to use these classes for example
+    .test{
+        @extend %class name
+    }
+*/
+.header .navbar .links ul, .advertise .advertise-info ul, .pricing-section .pricing-box .pricing-info ul {
+  list-style: none;
+}
+
+.advertise, .pricing-section, .plans, .search-domin, .contact-us, .footer {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.advertise .advertise-info h2, .plans h3, .search-domin h3, .contact-us h3 {
+  font-size: 18px;
+  color: #2c4755;
+}
+
+.advertise .advertise-info p, .plans p, .search-domin p, .contact-us p {
+  color: #2c4755;
+  font-size: 15px;
+  margin: 25px auto;
+  width: 70%;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.landing-info .feautres .feautre-box i, .pricing-section .pricing-box .pricing-info ul i {
+  color: #3bd825;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.advertise:after {
+  content: url("../images/Mid Cloud.png");
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.advertise .advertise-img,
+.advertise .advertise-info {
+  width: 50%;
+  float: left;
+}
+
+.advertise .advertise-info {
+  text-align: left;
+}
+
+.advertise .advertise-info h2 {
+  font-size: 35px;
+  color: #2c4755;
+}
+
+.advertise .advertise-info h2 span {
+  font-size: 28px;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.advertise .advertise-info p {
+  margin: 25px;
+}
+
+.advertise .advertise-info ul li {
+  font-size: 15px;
+  color: #2c4755;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.advertise .advertise-info ul li i {
+  color: #3bd825;
+  margin: 0 15px;
+}
+
+.advertise .ad-two {
+  width: 34%;
+  margin-left: 16%;
+}
+
+.advertise .ad-two p {
+  width: 100%;
+  margin-left: 0;
+}
+
+.pricing-section .pricing-box {
+  width: 23.5%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.pricing-section .pricing-box:not(:last-of-type) {
+  margin-right: 2%;
+}
+
+.pricing-section .pricing-box .pricing-body {
+  background-color: #53c1ef;
+  height: 250px;
+  border-radius: 10px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.pricing-section .pricing-box .pricing-body:after {
+  content: url("../images/Pricing Clouds.png");
+  position: absolute;
+  top: 205px;
+  right: 0;
+  max-width: 100%;
+}
+
+.pricing-section .pricing-box img {
+  width: 100%;
+}
+
+.pricing-section .pricing-box .pricing-info {
+  background-color: #FFF;
+  border: 3px solid #e1e8ec;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 40px 0 10px;
+}
+
+.pricing-section .pricing-box .pricing-info button {
+  margin: 15px 0 0;
+  width: 40%;
+}
+
+.landing-info {
+  position: absolute;
+  top: 40px;
+  width: 40%;
+  text-align: left;
+}
+
+.landing-info h1 {
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.landing-info h2 {
+  margin: 10px 0;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.landing-info p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.landing-info .feautres {
+  margin-top: 25px;
+}
+
+.landing-info .feautres .feautre-box {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.landing-info .feautres .feautre-box p {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.plans {
+  position: relative;
+}
+
+.plans:after {
+  content: url("../images/Mid Cloud.png");
+  position: absolute;
+  top: -146px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.plans p {
+  margin-bottom: 75px;
+}
+
+.plans .servicses .services-box {
+  width: 32%;
+  float: left;
+}
+
+.plans .servicses .services-box:not(:last-of-type) {
+  margin-right: 2%;
+}
+
+.plans .servicses .services-box h3 {
+  margin-top: 25px;
+}
+
+.search-domin {
+  background-color: #f5f6f7;
+}
+
+.search-domin p {
+  margin-bottom: 75px;
+}
+
+.search-domin form input {
+  background-color: transparent;
+  border: 2px solid #cacaca;
+  width: 40%;
+  height: 45px;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+
+.search-domin form button {
+  width: 150px;
+  height: 45px;
+}
+
+.pricing-section .pricing-box {
+  overflow: visible;
+}
+
+.pricing-section .pricing-box .pricing-body .outer-circle {
+  position: absolute;
+  background-color: #FFF;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: -75px;
+}
+
+.pricing-section .pricing-box .pricing-body .inner-circle {
+  position: absolute;
+  background-color: #53c1ef;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 15px;
+  padding: 30px;
+}
+
+.pricing-section .pricing-box .pricing-body .inner-circle span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pricing-section .pricing-box img {
+  width: 100%;
+}
+
+.pricing-section .pricing-box .pricing-info ul {
+  width: 65%;
+  text-align: left;
+  margin: auto;
+}
+
+.pricing-section .pricing-box .pricing-info ul li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #637988;
+}
+
+.contact-us button {
+  width: 150px;
+  height: 45px;
+}
+
+.footer {
+  background-color: #344392;
+  color: #FFF;
+  text-align: left;
+  position: relative;
+}
+
+.footer ul {
+  margin: 0 25px;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.footer ul li:last-of-type {
+  margin-bottom: 25px;
+}
+
+.footer h3 {
+  margin-bottom: 25px;
+  font-size: 21px;
+}
+
+.footer .footer-section {
+  width: 23%;
+  float: left;
+  margin: 0 1%;
+}
+
+.footer .blog span {
+  margin: 0 0 15px;
+  display: inline-block;
+}
+
+.footer .blog p {
+  font-size: 15px;
+  color: #FFF;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.footer .social i {
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+.footer::before {
+  content: url("../images/Clouds.png");
+  position: absolute;
+  top: 375px;
+  right: 0;
+}
+
+.footer::after {
+  content: url("../images/Mid Cloud.png");
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+/*# sourceMappingURL=home.css.map */

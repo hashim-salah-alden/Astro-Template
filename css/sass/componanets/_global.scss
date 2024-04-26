@@ -1,0 +1,150 @@
+
+/* to use these classes for example
+    .test{
+        @extend %class name
+    }
+*/
+
+%list-unstyled{
+    list-style: none;
+}
+
+%section-reset{
+    padding:80px 0;
+    text-align: center;
+}
+
+%main-heading{
+    font-size: 18px;
+    color:#2c4755
+}
+
+%main-pragraph{
+    color: #2c4755;
+    font-size: 15px;
+    margin: 25px auto;
+    width: 70%;
+    line-height: 1.5;
+    @include fontWeight(normal)
+}
+
+%check-icon{
+    color:#3bd825;
+    @include fontWeight(bold);
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+
+// start advertise section 
+.advertise{
+    &:after{
+        @include midclouds(Mid Cloud,280px);
+    }
+    @extend %section-reset;
+    .advertise-img,
+    .advertise-info{
+        width:50%;
+        float: $float-left;
+    }
+    
+    .advertise-info{
+        text-align: left;
+        h2{
+            @extend %main-heading;
+            font-size: 35px;
+            color:#2c4755;
+            span{
+                font-size: 28px;
+                display: inline-block;
+                @include fontWeight(normal);
+                
+                
+            }
+        }
+        p{
+            @extend %main-pragraph;
+            margin: 25px;
+        }
+        ul{
+            @extend %list-unstyled;
+            li{
+                font-size: 15px;
+                color: #2c4755;
+                margin-bottom: 10px;
+                @include fontWeight(bold);
+                i{
+                    color:#3bd825;
+                    margin:0 15px;
+                }
+            }
+        }
+    }
+    .ad-two{
+        width: 34%;
+        margin-left: 16%;
+        p{
+            width:100%;
+            margin-left: 0;
+        }
+    }
+}
+// end advertise section
+
+// start why-we section
+%what-we{
+    @extend %section-reset;
+    h3{
+        @extend %main-heading;
+        margin-bottom: 15px;
+    }
+    .our-features{
+        margin: 40px 0;
+        .feature-box {
+            i{
+                font-size: 25px;
+                float: left;
+                background-color: #53c1ef;
+                color: #FFF;
+                padding: 15px;
+                border-radius: 50%;
+                margin: 0 15px;
+            }
+            .feature-info{
+                text-align: left;
+                h4{
+                    @extend %main-heading;
+                    font-size: 16px
+                }
+                p{
+                    @extend %main-pragraph;
+                    width: 100%;
+                    margin:15px 0 0 ;
+                }
+            }
+        }
+    }
+}
+
+// end why-we section
+
+
+%header{
+    .landing{
+        @extend %section-reset;
+        &:after{
+            @include cloud(Clouds,180px,0);
+        }
+        position: relative;
+        .landing-info{
+            h1{
+                margin-bottom: 25px;
+                font-size: 35px;
+            }
+            p{
+                @extend %main-pragraph;
+                color:#FFF;
+            }
+        }
+    }
+}

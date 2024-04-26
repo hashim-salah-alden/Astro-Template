@@ -1,0 +1,79 @@
+
+// font weight mixin
+// to use this mixin write @include fontWeight(medium);
+@mixin fontWeight($weight){
+    $weights: (
+        thin: 100,
+        extra-light: 200,
+        ultra-light: 200,
+        light: 300,
+        normal: 400,
+        book: 400,
+        regular: 400,
+        medium: 500,
+        semi-bold: 600,
+        demi-bold: 600,
+        bold: 700,
+        extra-bold: 800,
+        ultra-bold: 900,
+        heavy: 900,
+        black: 900,
+        ultra: 900,
+        ultra-black: 900,
+        extra-ultra: 900
+    );
+    $output: $weight;
+
+    @if map-has-key($weights,$weight){
+
+        $output : map-get($weights , $weight )
+    }
+    font-weight: $output;
+}
+
+// create prefixer mixin
+@mixin preifixer($property,$value,$prefixes...){
+
+    @each $prefix in $prefixes {
+
+        #{'-'+ $prefix +'-' + $property} : $value ;
+    }
+
+    #{$property} : $value;
+};
+
+// create the overlay mixin
+@mixin overLay($color,$alpha){
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color:rgba($color,$alpha);
+}
+
+/* 
+        &:after{       
+            top: 540px;
+            right: -200px;
+        }
+*/
+
+// create clouds mixin
+// @mixin cloud($imgName,$top,$right) {    // remove the right parametter
+//     content: url('../images/#{$imgName}.png');
+//     position: absolute;
+//     top: $top;
+//     right: $right;
+// }
+
+// // create mid clouds mixin
+// @mixin midclouds($imgName,$top){
+//     content: url('../images/#{$imgName}.png');
+//     position: absolute;
+//     top: $top;
+//     left: 50%;
+//     transform: translate(-50%);
+// }
+
+

@@ -1,0 +1,106 @@
+
+// start header section
+.header{
+    @extend %header;
+}
+// end header section
+
+// start what we do section
+.why-we{
+    @extend %what-we;
+    h3{
+        font-size: 28px;
+    }
+}
+// end what we do section
+
+// start the team section 
+.team-section{
+    @extend %pricing-section;
+    h3{
+        @extend %main-heading;
+        font-size:28px;
+        margin-bottom: 85px;
+    }
+    .team-body{
+        @extend %pricing-body;
+    }
+    .team-info{
+        padding:15px !important;
+        @extend %pricing-info;
+        h4{
+            @extend %main-heading;
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                width: 80%;
+                top: 32px;
+                left: 50%;
+                height: 2px;
+                display: block;
+                background-color: #c3d0d8;
+                transform: translate(-50%);
+            }
+        }
+        p{
+            @extend %main-pragraph;
+            width:100%;
+        }
+    }
+    p{
+        @extend %main-pragraph;
+        width:50%;
+        margin:80px auto 0;
+    }
+}
+// end the team section
+
+// start our company 
+.our-company{
+    @extend %section-reset;
+    padding-top:0;
+    h3{
+        @extend %main-heading;
+    }
+    .thumbnails-container{
+        padding:80px 0;
+        background-color:#fefefe;
+        .thumbnails{
+            .box{
+                min-height: 210px;
+                background-color: #eae2e8;
+                margin-bottom: 5px;
+                line-height: 210px;
+                display:none;
+                &.active{
+                    display:block;
+                }
+            }
+            .thumbnails-options{
+                margin-top: 5px;
+                .thumbnail{
+                    height: 70px;
+                    cursor: pointer;
+                    background-color:#eae2e8;
+                    color:#eae2e8;
+                    min-width:(92% / 5);
+                    float:$float-left;
+                    &:not(:last-of-type){
+                        margin-right: 2%;
+                    }
+                }
+            }
+        }
+        .thumbnails-info{
+            p{
+                @extend %main-pragraph;
+                width:100%;
+                margin:0 0 25px;
+                line-height: 1.2;
+                text-align: left;
+            }
+        }
+    }
+}
+// end our company

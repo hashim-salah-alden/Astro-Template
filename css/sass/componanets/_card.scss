@@ -1,0 +1,43 @@
+// start pricing section 
+%pricing-section{
+    @extend %section-reset;
+    .pricing-box{
+        width:(94% / 4);
+        position: relative;
+        overflow: hidden;
+        float: $float-left;
+        &:not(:last-of-type){
+            margin-right: 2%;
+        }
+
+        %pricing-body{
+            background-color:#53c1ef;
+            height: 250px;
+            border-radius: 10px;
+            padding:40px 0;
+            position: relative;
+            &:after{
+                @include cloud(Pricing Clouds,205px,0);
+                max-width: 100%;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    %pricing-info{
+        background-color:#FFF;
+        border:3px solid #e1e8ec;
+        border-top: none;
+        border-radius:0 0 10px 10px;  
+        padding:40px 0 10px;
+
+        button{
+            @extend %main-button;
+            margin: 15px 0 0;
+            width:40%
+        }
+    }
+    }
+
+}
+// end pricing section 

@@ -1,0 +1,173 @@
+// here we will write the css style
+// start landind info
+.landing-info{
+    position: absolute;
+    top:40px;
+    width:40%;
+    text-align: left;
+    h1{
+        @include fontWeight(normal);
+        font-size: 45px;
+    }
+    h2{
+        margin:10px 0;
+        font-size: 25px;
+        @include fontWeight(normal);
+    }
+    p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .feautres{
+        margin-top: 25px;
+    .feautre-box{
+            font-size: $noraml-text;
+            margin-bottom: 15px;
+    i{
+        @extend %check-icon;
+        }
+    p{
+                display: inline-block;
+                font-size: 16px;
+            }
+        }
+        }
+}
+// end landing info
+
+// start plans section
+.plans{
+    @extend %section-reset;
+    position: relative;
+    &:after{
+        @include midclouds(Mid Cloud,-146px);
+    }
+    h3{
+        @extend %main-heading;
+    }
+    p{
+        @extend %main-pragraph ;
+        margin-bottom: 75px;
+    }
+    .servicses .services-box{
+        width:(96% / 3);
+        float:$float-left;
+        &:not(:last-of-type){
+            margin-right: 2%;
+        }
+        h3{
+            margin-top:25px
+        }
+
+    }
+}
+// end plans section
+
+// start search section 
+.search-domin{
+    @extend %section-reset;
+    background-color:#f5f6f7;
+    h3{
+        @extend %main-heading;
+    }
+    p{
+        @extend %main-pragraph ;
+        margin-bottom: 75px;
+    }
+    form{
+        input{
+            background-color: transparent;
+            border: 2px solid #cacaca;
+            width: 40%;
+            height: 45px;
+            border-radius: 10px;
+            margin: 0 15px;
+        }
+        button{
+            @extend %main-button;
+            width:150px;
+            height: 45px;
+        }
+    }
+}      
+// end search section 
+
+// start pricing section 
+.pricing-section{
+    @extend %pricing-section;;
+    .pricing-box{
+        overflow: visible;
+        .pricing-body{
+            @extend %pricing-body;
+            .outer-circle{
+                position: absolute;
+                background-color: #FFF;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                left: 50%;
+                transform: translate(-50%);
+                top: -75px;
+            }
+            .inner-circle{
+                position: absolute;
+                background-color: #53c1ef;
+                color: #FFF;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                left: 50%;
+                transform: translate(-50%);
+                top: 15px;
+                padding: 30px;
+                span{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+
+        }
+        img{
+            width: 100%;
+        }
+    .pricing-info{
+        @extend  %pricing-info;
+
+        ul{
+            @extend %list-unstyled;
+            width: 65%;
+            text-align: left;
+            margin: auto;
+            i{
+                @extend %check-icon; 
+            }
+            li{
+                margin-bottom: 10px;
+                font-weight: bold;
+                font-size: 15px;
+                color:#637988;
+            }
+        }
+    }
+    }
+
+}
+// end pricing section 
+
+// start contact us section   
+.contact-us{
+    @extend %section-reset;
+    h3{
+        @extend %main-heading;
+    }
+    p{
+        @extend %main-pragraph;
+    }
+    button{
+        @extend %main-button;
+        width: 150px;
+        height: 45px;
+    }
+}
+
+// end contact us section

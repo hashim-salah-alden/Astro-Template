@@ -1,0 +1,9 @@
+/* to use these classes for example
+    .test{
+        @extend %class name
+    }
+*/
+.clearfix {
+  overflow: auto;
+}
+/*# sourceMappingURL=classes.css.map */

@@ -1,0 +1,65 @@
+.header{
+    color:#FFF;
+    position: relative;
+    overflow: hidden;
+    
+    .top{
+        background-color:$main-color;
+        padding:10px 0;
+
+        .info-box{
+            @include fontWeight(medium);
+            font-size: $noraml-text;
+            display:inline-block;
+            margin-right: 20px;
+                span{
+                    display:inline-block;
+                    margin:0 5px
+                }
+        }  
+    }
+
+    .navbar{
+        background-color:#f4f7f9;
+        padding:15px 0;
+        overflow: hidden;
+    .logo{
+            float:$float-left;
+            width:30%;
+        }
+
+    .links{
+        float:$float-left;
+        width:70%;
+            ul{
+                @extend %list-unstyled;
+                li{
+                    display: inline-block;
+                    margin: 0px 15px;
+                    font-size: 16px;
+                    line-height: 35px;
+                    text-transform: uppercase;
+                    @include fontWeight(bold);
+                }
+                .link {
+                    text-decoration: none ;
+                    color:#334752;
+                }  
+            }  
+        }
+    }   
+    
+    .landing{
+        background-color:$main-color;
+        position: relative;
+        .container{   
+            img{
+                width:100%;
+                margin-top:80px;
+            }
+        }
+    }
+    &:after{     
+        @include cloud(Clouds,650px,0);
+    }
+}
